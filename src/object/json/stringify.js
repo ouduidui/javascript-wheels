@@ -37,7 +37,7 @@ function stringify(value) {
   if (value.toJSON && typeof value.toJSON === 'function') {
     return stringify(value.toJSON());
   }
-  // 处理对象
+  // 处理数组
   if (value instanceof Array) {
     const result = value.map((cur) => {
       // undefined、function或symbol都返回'null'
