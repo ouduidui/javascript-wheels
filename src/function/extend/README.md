@@ -85,7 +85,7 @@ function Colors1(color) {
 }
 
 Colors1.prototype = new Colors();
-Colors1.prototype.construct = Colors1;
+Colors1.prototype.constructor = Colors1;
 
 
 let c1 = new Colors1('yellow');
@@ -109,7 +109,7 @@ function Colors1(color) {
 }
 
 Colors1.prototype = Object.create(Colors.prototype);
-Colors1.prototype.construct = Colors1;
+Colors1.prototype.constructor = Colors1;
 ```
 
 当时，我们可以将其进行封装：
