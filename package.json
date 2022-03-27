@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest && yarn test:promise",
+    "test": "jest --watch",
+    "test:all": "jest && yarn test:promise",
     "test:promise": "promises-aplus-tests __test__/promise/promise.js"
   },
   "devDependencies": {
